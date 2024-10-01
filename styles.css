@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 100%;
+    background-color: #e0e0e0;
+    margin: 20px 0;
+    overflow: hidden; /* Clearing floats */
+    padding: 10px;
+}
+
+.block {
+    width: 150px;
+    height: 100px;
+    background-color: #b0b0b0;
+    margin: 10px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/* Для блоків, що займають праву частину в різних рядках */
+.full-right {
+    clear: right;
+}
+
+/* Для блоків по центру */
+.center-layout {
+    text-align: center;
+}
+
+.center {
+    float: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+/* Для блоків по центру в різних рядках */
+.full-center {
+    display: block;
+    margin: 10px auto;
+    clear: both;
+}
